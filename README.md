@@ -1,9 +1,14 @@
 # portfolio
 My portfolio made using django
 #
-Clone repository
-Create virtualenv env
-cd env
-Install django 1.9+ and Pillow for image handling
-Make migrations using python manage.py
-Runserver and go to localhost:8000
+1)Clone repository
+
+2)Create virtualenv env
+
+3)cd env
+
+4)Install django 1.9+ and Pillow for image handling
+
+5)Make migrations using python manage.py
+
+6)Runserver and go to localhost:8000
