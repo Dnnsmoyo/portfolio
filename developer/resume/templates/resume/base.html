@@ -1,0 +1,54 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>About</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel = "stylesheet" type="text/css" href= "{% static 'css/me.css' %}"/>
+</head>
+</div>
+{% block head %}
+<body>
+<div class ="navbar">
+<a href="{% url 'resume:index' %}">Me</a>
+<a href="{% url 'resume:work' %}">Work</a>
+<a href="{% url 'resume:contact'%}">Contact</a>
+</div>
+{% endblock %}
+
+<div class="pic" style="background-image: url('{% static 'css/building.jpg' %}">
+<center>
+<h1>DENNIS MOYO</h1>
+<p>CEO</p>
+<p>Web Dev</p>
+</div>
+<br>
+<center>
+<div class = "left">
+<h1>5 things you didn't know about Dennis Moyo</h1>
+<i>He is a self taught web developer/designer and loves it.</i><br><br>
+<i>He built this site from scratch</i><br><br>
+<i>He uses Python and Nodejs for his projects</i><br><br>
+<i>He is a freelancer</i><br><br>
+<i>He loves music and acting</i><br><br>
+</div>
+</center>
+<br><br><br>
+<center>
+<div class ="images">
+<img class = "one" src="{% static 'css/blog.jpg' %}">
+<figcaption>Blogging</figcaption>
+<img class ="two" src ="{% static 'css/travel.jpg' %}">
+<figcaption>Travel</figcaption>
+<img class ="three" src="{% static 'css/web.jpg' %}">
+<figcaption>Coding</figcaption>
+</div>
+</center>
